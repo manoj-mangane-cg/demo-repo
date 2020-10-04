@@ -1,2 +1,2 @@
 #MyTestApp 
-This is my test app
+This is my git learning course.
