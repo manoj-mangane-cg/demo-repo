@@ -3,8 +3,51 @@
 -> It helps to get the latest master branch code to your feature branch
 Follow below step's
 1. Do changes to your own current feature branch
+your-pathdemo-repo (testing-rebase)
 git checkout -b <<your-branch-name>>
 
 
-mmangane@LNAR-5CG03294RQ MINGW64 ~/OneDrive - Capgemini/Manoj-Data-OneDrive-Backup/Manoj_Data/Offical_Data/CG-iTransform/git-test/demo-repo (testing-rebase)
+your-pathdemo-repo (testing-rebase)
 $ touch new-rebasefile.txt
+$ git status
+On branch testing-rebase
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        new-rebasefile.txt
+
+your-pathdemo-repo (testing-rebase)
+$ git commit -m 'new test-rebase file added'
+[testing-rebase c47f828] new test-rebase file added
+ 1 file changed, 10 insertions(+)
+ create mode 100644 new-rebasefile.txt
+
+
+your-pathdemo-repo (testing-rebase)
+$ git push
+fatal: The current branch testing-rebase has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin testing-rebase
+
+
+your-pathdemo-repo (testing-rebase)
+$ git status
+On branch testing-rebase
+nothing to commit, working tree clean
+
+your-pathdemo-repo (testing-rebase)
+$ git push origin testing-rebase
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 883 bytes | 176.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+remote:
+remote: Create a pull request for 'testing-rebase' on GitHub by visiting:
+remote:      https://github.com/manoj-mangane-cg/demo-repo/pull/new/testing-rebase
+remote:
+To https://github.com/manoj-mangane-cg/demo-repo.git
+ * [new branch]      testing-rebase -> testing-rebase
+
