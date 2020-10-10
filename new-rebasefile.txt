@@ -1,0 +1,10 @@
+## Git Rebase
+-> Always do on your own local/separate feature branch (ie. not the shared feature branch)
+-> It helps to get the latest master branch code to your feature branch
+Follow below step's
+1. Do changes to your own current feature branch
+git checkout -b <<your-branch-name>>
+
+
+mmangane@LNAR-5CG03294RQ MINGW64 ~/OneDrive - Capgemini/Manoj-Data-OneDrive-Backup/Manoj_Data/Offical_Data/CG-iTransform/git-test/demo-repo (testing-rebase)
+$ touch new-rebasefile.txt
